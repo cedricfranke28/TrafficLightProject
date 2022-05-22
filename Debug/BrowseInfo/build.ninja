@@ -1,0 +1,130 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = D$:\IARWorkbench\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++D$:\IARWorkbench\common\bin\XclFileGenerator.exe $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = D$:\IARWorkbench\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++D$:\IARWorkbench\common\bin\SourceIndexer.exe $flags
+
+rule MAKEBROWSE
+  command = D$:\IARWorkbench\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++D$:\IARWorkbench\common\bin\makeBrowseData.exe $flags
+
+rule PDBLINK
+  command = D$:\IARWorkbench\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++D$:\IARWorkbench\common\bin\PbdLink.exe $flags
+
+
+
+#Build steps
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Button.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Button.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\GPIO.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\GPIO.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\LED.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\LED.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\main.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\main.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\OS_InOperation.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\OS_InOperation.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLI_SoftwareInput.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLI_SoftwareInput.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLO_HardwareOutput.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLO_HardwareOutput.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLO_SoftwareOutput.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLO_SoftwareOutput.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.xcl : COMPILER_XCL 
+  xclcommand = -source_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TrafficLightController.cpp -xcl_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.xcl -macro_file C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.tmp -icc_path D$:\IARWorkbench\arm\bin\iccarm.exe
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TrafficLightController.cpp -o C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Obj\ --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M3 -e --fpu=None --dlib_config D$:\IARWorkbench\arm\inc\c\DLib_Config_Normal.h -Ol --c++ --no_exceptions --no_rtti --predef_macros C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.tmp
+  rspfile_name = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.xcl.rsp
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Button.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\GPIO.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\LED.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\main.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\OS_InOperation.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLI_SoftwareInput.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLO_HardwareOutput.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TLO_SoftwareOutput.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.pbi : INDEXER C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.xcl |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\TrafficLightController.cpp
+  flags = -out=C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.pbi -f C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.xcl
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight.pbw : MAKEBROWSE C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight.pbd
+  flags = C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight.pbd -output C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight.pbw
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part0.pbi : PDBLINK C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.pbi |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.pbi $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.pbi
+  flags = -M C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part0.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\Button.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\GPIO.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\LED.pbi
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part1.pbi : PDBLINK C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.pbi |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.pbi $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.pbi
+  flags = -M C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part1.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\main.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\OS_InOperation.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLI_SoftwareInput.pbi
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part2.pbi : PDBLINK C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.pbi |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.pbi $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.pbi
+  flags = -M C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part2.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_HardwareOutput.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TLO_SoftwareOutput.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLightController.pbi
+
+build C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight.pbd : PDBLINK C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part0.pbi |  $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part1.pbi $
+C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part2.pbi
+  flags = -M C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight.pbd C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part0.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part1.pbi C$:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\BrowseInfo\TrafficLight_part2.pbi
+
