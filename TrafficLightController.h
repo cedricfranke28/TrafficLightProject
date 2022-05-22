@@ -2,11 +2,12 @@
 #ifndef _TRAFFICLIGHTCONTROLLER_H_
 #define _TRAFFICLIGHTCONTROLLER_H_
 
-#include <iostream>
 #include "OS_OutOfOperation.h"
 #include "OS_InOperation.h"
 #include "IOperationState.h"
 #include "ITrafficLightOutput.h"
+
+#include <iostream>
 
 using namespace std;
 
@@ -15,17 +16,17 @@ using namespace std;
  *  @author 		Cedric Franke
  *  @date		05.2022
  */
-class TrafficLight
+class TrafficLightController
 {
 public: 
-  TrafficLight(ITrafficLightOutput* pDeliverController = nullptr);
+  TrafficLightController(ITrafficLightOutput* pDeliverController = nullptr);
   bool Controller(char e);
 
 private: 
    ITrafficLightOutput* pOutputTrafficLightController;
-   InOperation Operation;
-   OutOfOperation Flashing;
-   iOperationMode* pCurrentState;
+   OS_InOperation Operation;
+   OS_OutOfOperation Flashing;
+   IOperationState* pCurrentState;
 };
 
 #endif

@@ -15,7 +15,8 @@ using namespace std;
  */
 class ITrafficLightState
 {
-  ITrafficLightState(ITrafficLightOutput *pDeliverState = nullptr) : pOutputState(pDeliverState);
+public:
+  ITrafficLightState(ITrafficLightOutput *pDeliverState = nullptr) : pOutputState(pDeliverState){};
   
   virtual void IS_Entry() = 0;
   virtual void IS_Exit() = 0;

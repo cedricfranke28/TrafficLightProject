@@ -15,8 +15,8 @@ using namespace std;
  */
 class IOperationState
 {
-public:
-      IOperationState(ITrafficLightOutput *pDeliverOperationState = nullptr) : pOutputOperationState(pDeliverOperationState);
+  public:
+    IOperationState(ITrafficLightOutput *pDeliverOperationState = nullptr) : pOutputOperationState(pDeliverOperationState){};
       virtual void IOS_Entry() = 0;
       virtual void IOS_Exit() = 0;
       virtual void IOS_Execution(char) = 0;

@@ -27,12 +27,12 @@ int main()
     ITrafficLightOutput* pTrafficLightOutput = new TLO_SoftwareOutput;
   #endif
   
-  TrafficLight TrafficLight(pTrafficLightOutput);
+  TrafficLightController TrafficLightController(pTrafficLightOutput);
   do
   {
-    Input = pTrafficLightInput->iInput();
+    Input = pTrafficLightInput->IInput();
   }
-  while(TrafficLight.Controller(Input));
+  while(TrafficLightController.Controller(Input));
   
   return 0;
 }

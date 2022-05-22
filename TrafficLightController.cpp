@@ -1,6 +1,6 @@
 #include "TrafficLightController.h"
 
-TrafficLight::TrafficLight(ITrafficLightOutput* pDeliverController) : pOutputTrafficLightController(pDeliverController), Operation(pDeliverController), Flashing(pDeliverController)
+TrafficLightController::TrafficLightController(ITrafficLightOutput* pDeliverController) : pOutputTrafficLightController(pDeliverController), Operation(pDeliverController), Flashing(pDeliverController)
 {
   Operation.pNextState = &Flashing;
   Flashing.pNextState = &Operation;
@@ -8,7 +8,7 @@ TrafficLight::TrafficLight(ITrafficLightOutput* pDeliverController) : pOutputTra
   pCurrentState->iOS_Entry;
 }
 
-bool TrafficLight::Controller(char E)
+bool TrafficLightController::Controller(char E)
 {
 	bool ReturnValue = true;
 	switch (toupper(E))
@@ -20,7 +20,7 @@ bool TrafficLight::Controller(char E)
 		break;
 	case 'X':
 		pCurrentState->iOS_Exit();
-		pCurrentState = false;
+		ReturnValue = false;
 	default:
 		pCurrentState->iOS_Execution(E);
 	}

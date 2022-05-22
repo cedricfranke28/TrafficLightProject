@@ -12,10 +12,10 @@
 class TLS_Green : public ITrafficLightState
 {
 public:
-    TLS_Green(ITrafficLightOutput *pDeliverGreen) : ITrafficLightState(pDeliverGreen);
+TLS_Green(ITrafficLightOutput *pDeliverGreen) : ITrafficLightState(pDeliverGreen){};
 
-    void IS_Entry() { pOutputTrafficLightState->iOutputGreen(); };
-    void IS_Exit() { pOutputTrafficLightState->iOff(); };
+    void IS_Entry() { pOutputState->IOutputGreen(); };
+    void IS_Exit() { pOutputState->IOff(); };
     void IS_Execution(char){};
 };
 
