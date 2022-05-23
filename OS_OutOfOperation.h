@@ -14,11 +14,12 @@ class OS_OutOfOperation : public IOperationState
 {
 
 public:
-  OS_OutOfOperation(ITrafficLightOutput *pDeliverOutOfOperation) : IOperationState(pDeliverOutOfOperation){};
+  OS_OutOfOperation(ITrafficLightOutput *pDeliverOutOfOperation) : IOperationState(pDeliverOutOfOperation){}
 
-    void Entry();
-    void Exit();
-    void Execution(char) { pOutputOperationState->OutputFlashing(); };
+  void Entry() { pOutputOperationState->OutputFlashing(); }
+  void Exit() {};
+  void Execution(char) {}
+  
 };
 
 #endif

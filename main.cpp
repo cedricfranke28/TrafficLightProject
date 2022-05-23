@@ -8,7 +8,7 @@
 
 using namespace std;
 
-#define _HARDWAREPRESENT_
+//#define _HARDWAREPRESENT_
 
 int main()
 {
@@ -16,9 +16,10 @@ int main()
   cout << "You start with the red traffic light phase." << endl;
   cout << "To change the mode, please enter B." << endl;
   cout << "To change the traffic light phase, please enter F, only possible in the status in operation." << endl;
-  cout << "To exit the traffic light control, please press X." << endl;
+  cout << "To exit the traffic light control, please press X." << endl << endl;
   
   char Input = NULL;
+
   
   #ifdef _HARDWAREPRESENT_
     ITrafficLightInput* pTrafficLightInput = new TLI_HardwareInput;
@@ -27,6 +28,7 @@ int main()
     ITrafficLightInput* pTrafficLightInput = new TLI_SoftwareInput;
     ITrafficLightOutput* pTrafficLightOutput = new TLO_SoftwareOutput;
   #endif
+  
   
   TrafficLightController TrafficLightController(pTrafficLightOutput);
   do

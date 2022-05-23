@@ -1,6 +1,7 @@
 /** @file TLI_SoftwareInput.h */
 
-#pragma once
+#ifndef _SOFTWAREINPUT_H_
+#define _SOFTWAREINPUT_H_
 #include "ITrafficLightInput.h"
 
 /** Terminal-input management.  
@@ -20,3 +21,5 @@ public:
 
 	char Input(){	cin >> CharacterInput; return CharacterInput;	};
 };
+
+#endif

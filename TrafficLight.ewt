@@ -2901,6 +2901,9 @@
     </file>
     <file>
         <name>$PROJ_DIR$\TLO_SoftwareOutput.cpp</name>
+        <configuration>
+            <name>Debug</name>
+        </configuration>
     </file>
     <file>
         <name>$PROJ_DIR$\TLO_SoftwareOutput.h</name>

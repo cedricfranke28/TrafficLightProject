@@ -20,7 +20,7 @@ class TrafficLightController
 {
 public: 
   TrafficLightController(ITrafficLightOutput* pDeliverController = nullptr);
-  bool Controller(char e);
+  bool Controller(char F);
 
 private: 
    ITrafficLightOutput* pOutputTrafficLightController;

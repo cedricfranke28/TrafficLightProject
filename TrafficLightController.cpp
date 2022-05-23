@@ -8,10 +8,10 @@ TrafficLightController::TrafficLightController(ITrafficLightOutput* pDeliverCont
   pCurrentState->Entry();
 }
 
-bool TrafficLightController::Controller(char E)
+bool TrafficLightController::Controller(char F)
 {
 	bool ReturnValue = true;
-	switch (toupper(E))
+	switch (toupper(F))
 	{
 	case 'B':
 		pCurrentState->Exit();
@@ -22,7 +22,7 @@ bool TrafficLightController::Controller(char E)
 		pCurrentState->Exit();
 		ReturnValue = false;
 	default:
-		pCurrentState->Execution(E);
+		pCurrentState->Execution(F);
 	}
 	
 	return ReturnValue;

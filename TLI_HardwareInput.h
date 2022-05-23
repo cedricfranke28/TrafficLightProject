@@ -1,6 +1,7 @@
 /** @file TLI_HardwareInput.h */
 
-#pragma once
+#ifndef _HARDWAREINPUT_H_
+#define _HARDWAREINPUT_H_
 #include "ITrafficLightInput.h"
 #include "Button.h"
 
@@ -18,6 +19,8 @@ private:
 public:
       TLI_HardwareInput() { }
 
-      char Input() { return button.ButtonRequest(); };
+      char Input() { return button.RequestButton(); };
 	
 };
+
+#endif

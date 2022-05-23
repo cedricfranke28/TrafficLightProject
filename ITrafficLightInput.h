@@ -14,7 +14,7 @@ using namespace std;
 class ITrafficLightInput
 {
 public: 
-  ITrafficLightInput();
+  ITrafficLightInput() {};
   virtual char Input() = 0;
 };
 

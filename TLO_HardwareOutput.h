@@ -1,6 +1,7 @@
 /** @file TLO_HardwareOutput.h */
 
-#pragma once
+#ifndef _HARDWAREOUTPUT_H_
+#define _HARDWAREOUTPUT_H_
 #include "ITrafficLightOutput.h"
 #include "LED.h"
 
@@ -13,7 +14,7 @@
 class TLO_HardwareOutput :public ITrafficLightOutput
 {
 public:
-    TLO_HardwareOutput();
+  TLO_HardwareOutput() {};
     void OutputRed() { led.redLED(true); }
     void OutputRedAmber() { led.redLED(true); led.amberLED(true); }
     void OutputAmber() { led.amberLED(true); }
@@ -25,4 +26,5 @@ private:
     UserLEDs led;
 	
 };
+#endif
 

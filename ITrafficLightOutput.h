@@ -14,7 +14,7 @@ using namespace std;
 class ITrafficLightOutput
 {
 public:
-   ITrafficLightOutput();
+  ITrafficLightOutput() {};
    virtual void OutputRed() =0;
    virtual void OutputRedAmber() =0;
    virtual void OutputAmber() =0;
