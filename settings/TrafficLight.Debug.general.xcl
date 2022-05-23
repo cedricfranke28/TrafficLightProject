@@ -1,10 +1,14 @@
 "D:\IARWorkbench\arm\bin\armPROC.dll" 
 
-"D:\IARWorkbench\arm\bin\armSIM2.dll" 
+"D:\IARWorkbench\arm\bin\armSTLINK.dll" 
 
 "C:\Users\cfranke.MANHN01\Documents\Semester6\Embedded\TrafficLightProject\Debug\Exe\TrafficLight.out" 
 
 --plugin="D:\IARWorkbench\arm\bin\armbat.dll" 
+
+--device_macro="D:\IARWorkbench\arm\config\debugger\ST\STM32F4xx.dmac" 
+
+--flash_loader="D:\IARWorkbench\arm\config\flashloader\ST\FlashSTM32F401xE.board" 
 
 
 

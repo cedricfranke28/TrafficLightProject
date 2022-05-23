@@ -1,39 +1,42 @@
-/** @file Button.h*/
+/** @file UserButtons.h*/
 
-#ifndef _BUTTON_H_
-#define _BUTTON_H_
+#ifndef USERBUTTONS_H
+#define USERBUTTONS_H
+
+#include "regtypes.h"
 #include "GPIO.h"
+#include <iostream>
 
-/** 
- *  
- *  @author 		Niklas Stein
- *  @date		05.2022
+using namespace std;
 
+/**
+ *  The class 
  */
-
-class Button
+class UserButtons
 {
 private:
-	bool StateA = false;;
-	bool StateB = false;
-	bool OutputX = false;
-	int ButtonA;	/**<Pin 3 1.Taster D3 */
-	int ButtonB;	/**<Pin 5 2.Taster D4 */
-	GPIO PortB;
-
+  GPIO myGPIOB;
+  bool getPinB3();
+  bool getPinB5(); 
+ 
 public:
-	Button() : PortB(0x40020400), ButtonA(3), ButtonB(5)
-	{
-		PortB.select_datadirection(ButtonA, false);
-		PortB.select_datadirection(ButtonB, false);
-	}
+/**
+ *  @brief Configuration of the desired port. Each object instantiated from the class references to the selected Port (e.g. GPIOA, GPIOB ?). 
+ *  @brief Activation of the GPIO clock for the corresponding register.
+ *  @param startadress: identifies the GPIO-Port
+ *  @return None
+ */
+  UserButtons();
+  
+/**
+ *  @brief Sets the data direction (input/output) for each pin.
+ *  @param pin identifies the GPIO-Pin
+ *  @param direction identifies the direction of the Pin
+ *  @return None
+ */
+  UINT8 getButton();
+  
 
-	bool RequestA();
-
-	bool RequestB();
-
-	char RequestButton();
-		
 };
 
-#endif
+#endif //USERBUTTONS_H

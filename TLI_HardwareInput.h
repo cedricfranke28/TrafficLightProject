@@ -14,12 +14,12 @@
 class TLI_HardwareInput :	public ITrafficLightInput
 {
 private:
-	Button button;
+	UserButtons button;
 
 public:
       TLI_HardwareInput() { }
 
-      char Input() { return button.RequestButton(); };
+      char Input() { return button.getButton(); };
 	
 };
 

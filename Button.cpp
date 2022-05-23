@@ -1,95 +1,88 @@
-/** @file Button.cpp */
+/** @file UserButtons.cpp*/
+
 #include "Button.h"
 
+#include <iostream>
 
-bool Button::RequestA()
+using namespace std;
+
+UserButtons::UserButtons() : myGPIOB(0x40020400)
 {
-	bool Request1 = PortB.read_port();
-	for (int i = 0; i < 50000; i++) {}
-	bool Request2 = PortB.read_port();
-	if ((Request1 & Request2) & !StateA)
-	{
-		cout << "State: " << StateA << endl;
-		StateA = true;
-		return  true;
-	}
-	else
-	{
-		cout << "State: " << StateA << endl;
-		StateA = false;
-		return  false;
-	}
+
 }
 
-
-bool Button::RequestB()
+bool UserButtons::getPinB3()
 {
-	bool Request1 = PortB.read_port();
-	for (int i = 0; i < 50000; i++) {}
-	bool Request2 = PortB.read_port();
-	if ((Request1 & Request2) & !StateB)
-	{
-		cout << "State: " << StateB << endl;
-		StateB = true;
-		return  true;
-	}
-	else
-	{
-		cout << "State: " << StateB << endl;
-		StateB = false;
-		return  false;
-	}
+  if(myGPIOB.read_port() & (1ul << 3))
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
 }
-
-
-char Button::RequestButton()
+bool UserButtons::getPinB5()
 {
- 
-	bool Request1 = PortB.read_port();
-	bool Request2 = PortB.read_port();
-	for (int i = 0; i < 50000; i++) {}
+  if(myGPIOB.read_port() & (1ul << 5))
+  {
+    return 1;
+  }
+  else
+  {
+    return 0;
+  }
+} 
 
-	bool Request3 = PortB.read_port();
-	bool Request4 = PortB.read_port();
 
+UINT8 UserButtons::getButton()
+{
+  myGPIOB.select_datadirection(3,false);        //Pin B3  Input Button D3
+  myGPIOB.select_datadirection(5,false);        //Pin B5  Input Button D4
+  
+  bool PB3 = false;
+  bool PB5 = false;
+  bool state;
+  bool nextstate;
+  
+  do
+  {
+    state = getPinB3();
 
-	
-	if ((Request1 & Request3 & !StateA) & !(Request2 & Request4))
-	{
+    for(int i = 0; i<3000; i++) {}
+    
+    nextstate = getPinB3();
+    PB3 = nextstate;
+  }
+  while(!(state == nextstate));
 
-		StateA = true;
-		StateB = false;
-		return 'B';
-	}
-	else if (!(Request1 & Request3) & (Request2 & Request4 & !StateB))
-	{
-		StateA = false;
-		StateB = true;
-		return 'F';
-	}
-	else if (((Request1 & Request3 & !StateA) & (Request2 & Request4 & !StateB) || (Request1 & Request3 & StateB) || (Request2 & Request4 & StateA)) & !OutputX)
-	{
-		StateA = true;
-		StateB = true;
-		OutputX = true;
-		return 'X';
-	}
+  
+  do
+  {
+    bool state = getPinB5();
+    
+    for(int i = 0; i<3000; i++) {}
+    
+    bool nextstate = getPinB5();
+    PB5 = nextstate;
+  }
+  while(!(state == nextstate));
 
-	else 
-	{
-		if (!(Request1 & Request3))
-		{
-			StateA = false;
-		}
-		if (!(Request2 & Request4))
-		{
-			StateB = false;
-		}
-		if (!(Request1 & Request3) & !(Request2 & Request4)) 
-		{
-			OutputX = false;
-		}
-		return 0;
-	}
-
+  
+  if(!(PB3) && !(PB5)) // no Button pressed
+  {
+    return 'O';
+  }
+  else if(PB3 && PB5) // both Buttons pressed
+  {
+    return 'X';
+  }
+  else if(PB3 && !(PB5)) // only PB3 pressed
+  {
+    return 'B';
+  }
+  else // only PB5 pressed
+  {
+    return 'F';
+  }
 }
