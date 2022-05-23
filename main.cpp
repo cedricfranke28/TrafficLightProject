@@ -31,7 +31,7 @@ int main()
   TrafficLightController TrafficLightController(pTrafficLightOutput);
   do
   {
-    Input = pTrafficLightInput->IInput();
+    Input = pTrafficLightInput->Input();
   }
   while(TrafficLightController.Controller(Input));
   

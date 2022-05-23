@@ -11,8 +11,6 @@ using namespace std;
 /**
  *  The class GPIO serves as an interface to read inputs and manipulate outputs 
  *  of the STM board.
- *  @author 		Timo Kempf
- *  @date		05.2022
  */
 class GPIO
 {

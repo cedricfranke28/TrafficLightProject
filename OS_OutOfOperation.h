@@ -16,9 +16,9 @@ class OS_OutOfOperation : public IOperationState
 public:
   OS_OutOfOperation(ITrafficLightOutput *pDeliverOutOfOperation) : IOperationState(pDeliverOutOfOperation){};
 
-    void IOS_Entry();
-    void IOS_Exit();
-    void IOS_Execution(char) { pOutputOperationState->IOutputFlashing(); };
+    void Entry();
+    void Exit();
+    void Execution(char) { pOutputOperationState->OutputFlashing(); };
 };
 
 #endif

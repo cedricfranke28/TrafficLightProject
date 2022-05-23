@@ -18,6 +18,6 @@ private:
 public:
       TLI_HardwareInput() { }
 
-      char IInput() { return Button.ButtonRequest(); };
+      char Input() { return button.ButtonRequest(); };
 	
 };

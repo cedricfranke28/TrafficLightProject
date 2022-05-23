@@ -2,6 +2,7 @@
 
 #pragma once
 #include "ITrafficLightOutput.h"
+#include <windows.h>
 
 /** Class to show output in Terminal. 
  *  
@@ -14,11 +15,11 @@ class TLO_SoftwareOutput :public ITrafficLightOutput
 public:
     TLO_SoftwareOutput(){ }
 	
-    void IOutputRed() { cout << "Trafficlight: red" << endl; }
-    void IOutputRedAmber() { cout << "Trafficlight: redamber" << endl; }
-    void IOutputAmber() { cout << "Trafficlight: amber" << endl; }
-    void IOutputGreen() { cout << "Trafficlight: green" << endl; }
-    void IOutputFlashing();
-    void IOff() { cout << "Trafficlight: off" << endl; }
+    void OutputRed() { cout << "Trafficlight: red" << endl; }
+    void OutputRedAmber() { cout << "Trafficlight: redamber" << endl; }
+    void OutputAmber() { cout << "Trafficlight: amber" << endl; }
+    void OutputGreen() { cout << "Trafficlight: green" << endl; }
+    void OutputFlashing();
+    void Off() { cout << "Trafficlight: off" << endl; }
 };
 

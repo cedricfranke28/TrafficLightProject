@@ -2894,13 +2894,7 @@
         <name>$PROJ_DIR$\TLI_HardwareInput.h</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\TLI_SoftwareInput.cpp</name>
-    </file>
-    <file>
         <name>$PROJ_DIR$\TLI_SoftwareInput.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\TLO_HardwareOutput.cpp</name>
     </file>
     <file>
         <name>$PROJ_DIR$\TLO_HardwareOutput.h</name>

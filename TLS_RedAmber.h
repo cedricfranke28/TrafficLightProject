@@ -14,9 +14,9 @@ class TLS_RedAmber : public ITrafficLightState
 public:
   TLS_RedAmber(ITrafficLightOutput *pDeliverRedAmber) : ITrafficLightState(pDeliverRedAmber){}
 
-    void ITLS_Entry() { pOutputState->IOutputRedAmber(); }
-    void ITLS_Exit() { pOutputState->IOff(); }
-    void ITLS_Execution(char){}
+    void Entry() { pOutputState->OutputRedAmber(); }
+    void Exit() { pOutputState->Off(); }
+    void Execution(char){}
 };
 
 #endif

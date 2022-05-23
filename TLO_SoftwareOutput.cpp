@@ -2,7 +2,9 @@
 
 #include "TLO_SoftwareOutput.h"
 
-void TLO_SoftwareOutput::IOutputFlashing()
+void TLO_SoftwareOutput::OutputFlashing()
 {
-  
+  sleep(3000);
+  cout << "Flashing amber led" << endl;
+  sleep(3000);
 };

@@ -18,5 +18,5 @@ private:
 public:
 	TLI_SoftwareInput(){ }
 
-	char IInput() ;
+	char Input(){	cin >> CharacterInput; return CharacterInput;	};
 };

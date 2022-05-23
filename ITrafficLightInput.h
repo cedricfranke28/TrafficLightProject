@@ -15,7 +15,7 @@ class ITrafficLightInput
 {
 public: 
   ITrafficLightInput();
-  virtual char IInput() = 0;
+  virtual char Input() = 0;
 };
 
 #endif

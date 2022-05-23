@@ -14,15 +14,15 @@ class TLO_HardwareOutput :public ITrafficLightOutput
 {
 public:
     TLO_HardwareOutput();
-    void IOutputRed() { led.LED_Red(true); }
-    void IOutputRedAmber() { led.LED_Red(true); led.LED_Amber(true); }
-    void IOutputAmber() { led.LED_Amber(true); }
-    void IOutputGreen() { led.LED_Green(true); }
-    void IOutputFlashing() { led.Toggle_Amber(); }
-    void IOff() { led.LED_All(false, false, false); }
+    void OutputRed() { led.LED_Red(true); }
+    void OutputRedAmber() { led.LED_Red(true); led.LED_Amber(true); }
+    void OutputAmber() { led.LED_Amber(true); }
+    void OutputGreen() { led.LED_Green(true); }
+    void OutputFlashing() { led.Toggle_Amber(); }
+    void Off() { led.LED_All(false, false, false); }
 
 private:
-    LED led;
+    UserLEDs led;
 	
 };
 

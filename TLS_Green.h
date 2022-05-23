@@ -14,9 +14,9 @@ class TLS_Green : public ITrafficLightState
 public:
 TLS_Green(ITrafficLightOutput *pDeliverGreen) : ITrafficLightState(pDeliverGreen){}
 
-    void ITLS_Entry() { pOutputState->IOutputGreen(); }
-    void ITLS_Exit() { pOutputState->IOff(); }
-    void ITLS_Execution(char){}
+    void Entry() { pOutputState->OutputGreen(); }
+    void Exit() { pOutputState->Off(); }
+    void Execution(char){}
 };
 
 #endif

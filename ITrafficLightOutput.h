@@ -15,12 +15,12 @@ class ITrafficLightOutput
 {
 public:
    ITrafficLightOutput();
-   virtual void IOutputRed() =0;
-   virtual void IOutputRedAmber() =0;
-   virtual void IOutputAmber() =0;
-   virtual void IOutputGreen() =0;
-   virtual void IOutputFlashing() =0;
-   virtual void IOff() = 0;
+   virtual void OutputRed() =0;
+   virtual void OutputRedAmber() =0;
+   virtual void OutputAmber() =0;
+   virtual void OutputGreen() =0;
+   virtual void OutputFlashing() =0;
+   virtual void Off() = 0;
 };
 
 #endif

@@ -19,9 +19,9 @@ class OS_InOperation : public IOperationState
 public:
     OS_InOperation(ITrafficLightOutput *pDeliverInOperation);
 
-    void IOS_Entry();
-    void IOS_Exit();
-    void IOS_Execution(char);
+    void Entry();
+    void Exit();
+    void Execution(char);
 
 private:
     TLS_Red Red;

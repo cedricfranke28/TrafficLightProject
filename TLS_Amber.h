@@ -14,9 +14,9 @@ class TLS_Amber : public ITrafficLightState
 public:
   TLS_Amber(ITrafficLightOutput *pDeliverAmber) : ITrafficLightState(pDeliverAmber){}
 
-    void ITLS_Entry() { pOutputState->IOutputAmber(); }
-    void ITLS_Exit() { pOutputState->IOff(); }
-    void ITLS_Execution(char){}
+    void Entry() { pOutputState->OutputAmber(); }
+    void Exit() { pOutputState->Off(); }
+    void Execution(char){}
 };
 
 #endif
