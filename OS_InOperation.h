@@ -29,7 +29,7 @@ private:
     TLS_Green Green;
     TLS_Amber Amber;
 
-    IOperationState *pCurrentState;
+    ITrafficLightState *CurrentState;
 };
 
 #endif

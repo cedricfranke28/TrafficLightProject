@@ -2,10 +2,10 @@
 
 TrafficLightController::TrafficLightController(ITrafficLightOutput* pDeliverController) : pOutputTrafficLightController(pDeliverController), Operation(pDeliverController), Flashing(pDeliverController)
 {
-  Operation.pNextState = &Flashing;
-  Flashing.pNextState = &Operation;
+  Operation.pFollowingState = &Flashing;
+  Flashing.pFollowingState = &Operation;
   pCurrentState = &Operation;
-  pCurrentState->iOS_Entry;
+  pCurrentState->IOS_Entry();
 }
 
 bool TrafficLightController::Controller(char E)
@@ -14,15 +14,15 @@ bool TrafficLightController::Controller(char E)
 	switch (toupper(E))
 	{
 	case 'B':
-		pCurrentState->iOS_Exit();
+		pCurrentState->IOS_Exit();
 		pCurrentState = pCurrentState->pFollowingState;
-		pCurrentState->iOS_Entry();
+		pCurrentState->IOS_Entry();
 		break;
 	case 'X':
-		pCurrentState->iOS_Exit();
+		pCurrentState->IOS_Exit();
 		ReturnValue = false;
 	default:
-		pCurrentState->iOS_Execution(E);
+		pCurrentState->IOS_Execution(E);
 	}
 	
 	return ReturnValue;

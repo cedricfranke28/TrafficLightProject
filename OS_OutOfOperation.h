@@ -1,5 +1,5 @@
 /** @file OS_OutOfOperation.h */
-#ifdef _OUTOFOPERATION_H_
+#ifndef _OUTOFOPERATION_H_
 #define _OUTOFOPERATION_H_
 
 #include "IOperationState.h"
@@ -14,7 +14,7 @@ class OS_OutOfOperation : public IOperationState
 {
 
 public:
-    OS_OutOfOperation(ITrafficLightOutput *pDeliverOutOfOperation) : IOperationState(pDeliverOutOfOperation);
+  OS_OutOfOperation(ITrafficLightOutput *pDeliverOutOfOperation) : IOperationState(pDeliverOutOfOperation){};
 
     void IOS_Entry();
     void IOS_Exit();

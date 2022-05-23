@@ -2888,6 +2888,9 @@
         <name>$PROJ_DIR$\OS_OutOfOperation.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\regtypes.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\TLI_HardwareInput.h</name>
     </file>
     <file>

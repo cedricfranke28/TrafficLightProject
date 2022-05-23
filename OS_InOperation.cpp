@@ -2,19 +2,20 @@
 
 #include "OS_InOperation.h"
 
-OS_InOperation::OS_InOperation(ITrafficLightOutput* pDeliverInOperation): Red(pOutputOperationState), RedAmber(pOutputOperationState), Amber(pOutputOperationState), Green(pOutputOperationState), IOperationState(pDeliverInOperation)
+OS_InOperation::OS_InOperation(ITrafficLightOutput* pDeliverInOperation) : Red(pOutputOperationState), RedAmber(pOutputOperationState), Amber(pOutputOperationState), Green(pOutputOperationState), IOperationState(pDeliverInOperation)
 {
   Red.pFollowingState = &RedAmber;
   RedAmber.pFollowingState = &Green;
   Green.pFollowingState = &Amber;
-  pCurrentState = &Red;
+  Amber.pFollowingState = &Red;
+  CurrentState = &Red;
 };
 
 void OS_InOperation::IOS_Entry()
 {
   cout << "Traffic light in operation" << endl;
-  pCurrentState = &Red;
-  pCurrentState->IS_Entry();
+  CurrentState = &Red;
+  CurrentState->IS_Entry();
 };
 
 void OS_InOperation::IOS_Execution(char E)
@@ -22,11 +23,16 @@ void OS_InOperation::IOS_Execution(char E)
   switch (toupper(E))
 	{
 		case 'F':
-			pCurrentState->IS_Exit();
-			pCurrentState = pCurrentState->pFollowingState;
-			pCurrentState->IS_Entry();
+			CurrentState->IS_Exit();
+			CurrentState = CurrentState->pFollowingState;
+			CurrentState->IS_Entry();
 			break;
 		default:
-			pCurrentState->IS_Execution(E);
+			CurrentState->IS_Execution();
 	}
 }
+
+void OS_InOperation::IOS_Exit()
+{
+  CurrentState->IS_Exit();
+};

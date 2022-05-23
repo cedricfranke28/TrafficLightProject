@@ -12,11 +12,11 @@
 class TLS_Amber : public ITrafficLightState
 {
 public:
-  TLS_Amber(ITrafficLightOutput *pDeliverAmber) : ITrafficLightState(pDeliverAmber){};
+  TLS_Amber(ITrafficLightOutput *pDeliverAmber) : ITrafficLightState(pDeliverAmber){}
 
-    void IS_Entry() { pOutputState->IOutputAmber(); };
-    void IS_Exit() { pOutputState->IOff(); };
-    void IS_Execution(char){};
+    void IS_Entry() { pOutputState->IOutputAmber(); }
+    void IS_Exit() { pOutputState->IOff(); }
+    void IS_Execution(char){}
 };
 
 #endif
