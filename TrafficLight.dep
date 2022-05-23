@@ -172,6 +172,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\TLO_SoftwareOutput.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 26</file>
+                </tool>
+            </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
