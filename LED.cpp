@@ -45,6 +45,14 @@ void UserLEDs::greenLED(bool state)
   }
 }
 
+void UserLEDs::amberLEDToggle(bool state)
+{
+  while(state)
+  {
+    myGPIOA.toggle_bit(PinAmber);
+  }
+}
+
 void UserLEDs::allLEDs(bool state)
 {
   if(state)

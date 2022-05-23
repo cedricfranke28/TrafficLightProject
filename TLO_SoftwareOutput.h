@@ -2,7 +2,6 @@
 
 #pragma once
 #include "ITrafficLightOutput.h"
-#include <windows.h>
 
 /** Class to show output in Terminal. 
  *  

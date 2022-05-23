@@ -49,6 +49,14 @@ public:
  */
   void greenLED(bool state);
   
+ /**
+ *  @brief Toggle the amber led repeatedly on and off
+ *  @param state : hands over the desired state
+ *  @return None
+ */
+  
+  void amberLEDToggle(bool state);
+  
 /**
  *  @brief Sets all LEDs to the desired state (High or Low)
  *  @param state : hands over the desired state
