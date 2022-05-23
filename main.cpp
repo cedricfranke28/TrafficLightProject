@@ -8,6 +8,7 @@
 
 using namespace std;
 
+#define _HARDWAREPRESENT_
 
 int main()
 {
@@ -19,7 +20,7 @@ int main()
   
   char Input = NULL;
   
-  #ifdef _HARDWAREPRESENT
+  #ifdef _HARDWAREPRESENT_
     ITrafficLightInput* pTrafficLightInput = new TLI_HardwareInput;
     ITrafficLightOutput* pTrafficLightOutput = new TLO_HardwareOutput;
   #else

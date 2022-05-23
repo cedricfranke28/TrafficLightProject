@@ -18,9 +18,9 @@ class ITrafficLightState
 public:
   ITrafficLightState(ITrafficLightOutput *pDeliverState = nullptr) : pOutputState(pDeliverState){}
   
-  virtual void IS_Entry() = 0;
-  virtual void IS_Exit() = 0;
-  virtual void IS_Execution() = 0;
+  virtual void ITLS_Entry() = 0;
+  virtual void ITLS_Exit() = 0;
+  virtual void ITLS_Execution(char) = 0;
   
   ITrafficLightState* pFollowingState;
   ITrafficLightOutput* pOutputState;

@@ -14,9 +14,9 @@ class TLS_Red : public ITrafficLightState
 public:
   TLS_Red(ITrafficLightOutput *pDeliverRed) : ITrafficLightState(pDeliverRed){}
 
-    void IS_Entry() { pOutputState->IOutputRed(); }
-    void IS_Exit() { pOutputState->IOff(); }
-    void IS_Execution(char){}
+    void ITLS_Entry() { pOutputState->IOutputRed(); }
+    void ITLS_Exit() { pOutputState->IOff(); }
+    void ITLS_Execution(char){}
 };
 
 #endif

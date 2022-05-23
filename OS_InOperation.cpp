@@ -15,7 +15,7 @@ void OS_InOperation::IOS_Entry()
 {
   cout << "Traffic light in operation" << endl;
   CurrentState = &Red;
-  CurrentState->IS_Entry();
+  CurrentState->ITLS_Entry();
 };
 
 void OS_InOperation::IOS_Execution(char E)
@@ -23,16 +23,16 @@ void OS_InOperation::IOS_Execution(char E)
   switch (toupper(E))
 	{
 		case 'F':
-			CurrentState->IS_Exit();
+			CurrentState->ITLS_Exit();
 			CurrentState = CurrentState->pFollowingState;
-			CurrentState->IS_Entry();
+			CurrentState->ITLS_Entry();
 			break;
 		default:
-			CurrentState->IS_Execution();
+			CurrentState->ITLS_Execution(E);
 	}
 }
 
 void OS_InOperation::IOS_Exit()
 {
-  CurrentState->IS_Exit();
+  CurrentState->ITLS_Exit();
 };

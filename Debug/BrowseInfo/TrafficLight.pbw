@@ -72687,6 +72687,20 @@
         "scope": "GPIO"
       },
       {
+        "ID": "c:@S@GPIO@F@GPIO#i#",
+        "What": "CXXConstructor",
+        "defdec": "Dec",
+        "display": "void GPIO(UINT32)",
+        "location": {
+          "column": "3",
+          "line": "35",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
+        },
+        "name": "GPIO",
+        "origin": "user_include",
+        "scope": "GPIO"
+      },
+      {
         "ID": "c:@S@GPIO@F@GPIO#I#",
         "What": "CXXConstructor",
         "defdec": "Dec",
@@ -72715,6 +72729,20 @@
         "scope": "GPIO"
       },
       {
+        "ID": "c:@S@GPIO@F@select_datadirection#c#b#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void select_datadirection(UINT8, bool)",
+        "location": {
+          "column": "8",
+          "line": "43",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
+        },
+        "name": "select_datadirection",
+        "origin": "user_include",
+        "scope": "GPIO"
+      },
+      {
         "ID": "c:@S@GPIO@F@set_bit#I#",
         "What": "CXXMethod",
         "defdec": "Dec",
@@ -72729,6 +72757,34 @@
         "scope": "GPIO"
       },
       {
+        "ID": "c:@S@GPIO@F@set_bit#i#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void set_bit(UINT32)",
+        "location": {
+          "column": "8",
+          "line": "50",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
+        },
+        "name": "set_bit",
+        "origin": "user_include",
+        "scope": "GPIO"
+      },
+      {
+        "ID": "c:@S@GPIO@F@delete_bit#i#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void delete_bit(UINT32)",
+        "location": {
+          "column": "8",
+          "line": "57",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
+        },
+        "name": "delete_bit",
+        "origin": "user_include",
+        "scope": "GPIO"
+      },
+      {
         "ID": "c:@S@GPIO@F@delete_bit#I#",
         "What": "CXXMethod",
         "defdec": "Dec",
@@ -72739,6 +72795,20 @@
           "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
         },
         "name": "delete_bit",
+        "origin": "user_include",
+        "scope": "GPIO"
+      },
+      {
+        "ID": "c:@S@GPIO@F@toggle_bit#i#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void toggle_bit(UINT32)",
+        "location": {
+          "column": "8",
+          "line": "64",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
+        },
+        "name": "toggle_bit",
         "origin": "user_include",
         "scope": "GPIO"
       },
@@ -72767,6 +72837,34 @@
           "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
         },
         "name": "read_port",
+        "origin": "user_include",
+        "scope": "GPIO"
+      },
+      {
+        "ID": "c:@S@GPIO@F@read_port#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "UINT32 read_port(void)",
+        "location": {
+          "column": "10",
+          "line": "71",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
+        },
+        "name": "read_port",
+        "origin": "user_include",
+        "scope": "GPIO"
+      },
+      {
+        "ID": "c:@S@GPIO@F@write_port#i#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void write_port(UINT32)",
+        "location": {
+          "column": "8",
+          "line": "78",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\GPIO.h"
+        },
+        "name": "write_port",
         "origin": "user_include",
         "scope": "GPIO"
       },
@@ -72888,415 +72986,89 @@
     "scope": null
   },
   {
-    "ID": "c:TLS_Green.h@53@macro@_GREEN_H_",
+    "ID": "c:TLS_Amber.h@53@macro@_AMBER_H_",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_GREEN_H_",
+    "display": "_AMBER_H_",
     "location": {
       "column": "9",
       "line": "3",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
     },
-    "name": "_GREEN_H_",
+    "name": "_AMBER_H_",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@S@TLS_Green",
+    "ID": "c:@S@TLS_Amber",
     "What": "Class",
     "defdec": "Def",
-    "display": "TLS_Green",
+    "display": "TLS_Amber",
     "location": {
       "column": "7",
       "line": "12",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
     },
     "members": [
       {
-        "ID": "c:@S@TLS_Green@F@TLS_Green#*$@S@ITrafficLightOutput#",
+        "ID": "c:@S@TLS_Amber@F@TLS_Amber#*$@S@ITrafficLightOutput#",
         "What": "CXXConstructor",
         "defdec": "Def",
-        "display": "void TLS_Green(ITrafficLightOutput *)",
+        "display": "void TLS_Amber(ITrafficLightOutput *)",
         "location": {
-          "column": "1",
+          "column": "3",
           "line": "15",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
         },
-        "name": "TLS_Green",
+        "name": "TLS_Amber",
         "origin": "user_include",
-        "scope": "TLS_Green"
+        "scope": "TLS_Amber"
       },
       {
-        "ID": "c:@S@TLS_Green@F@IS_Entry#",
+        "ID": "c:@S@TLS_Amber@F@ITLS_Entry#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Entry(void)",
+        "display": "void ITLS_Entry(void)",
         "location": {
           "column": "10",
           "line": "17",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
         },
-        "name": "IS_Entry",
+        "name": "ITLS_Entry",
         "origin": "user_include",
-        "scope": "TLS_Green"
+        "scope": "TLS_Amber"
       },
       {
-        "ID": "c:@S@TLS_Green@F@IS_Exit#",
+        "ID": "c:@S@TLS_Amber@F@ITLS_Exit#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Exit(void)",
+        "display": "void ITLS_Exit(void)",
         "location": {
           "column": "10",
           "line": "18",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
         },
-        "name": "IS_Exit",
+        "name": "ITLS_Exit",
         "origin": "user_include",
-        "scope": "TLS_Green"
+        "scope": "TLS_Amber"
       },
       {
-        "ID": "c:@S@TLS_Green@F@IS_Execution#C#",
+        "ID": "c:@S@TLS_Amber@F@ITLS_Execution#C#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Execution(char)",
+        "display": "void ITLS_Execution(char)",
         "location": {
           "column": "10",
           "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
         },
-        "name": "IS_Execution",
+        "name": "ITLS_Execution",
         "origin": "user_include",
-        "scope": "TLS_Green"
+        "scope": "TLS_Amber"
       }
     ],
-    "name": "TLS_Green",
+    "name": "TLS_Amber",
     "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:IOperationState.h@69@macro@_IOPERATIONSTATE_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_IOPERATIONSTATE_H_",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
-    },
-    "name": "_IOPERATIONSTATE_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@IOperationState",
-    "What": "Class",
-    "defdec": "Def",
-    "display": "IOperationState",
-    "location": {
-      "column": "7",
-      "line": "16",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@IOperationState@F@IOperationState#*$@S@ITrafficLightOutput#",
-        "What": "CXXConstructor",
-        "defdec": "Def",
-        "display": "void IOperationState(ITrafficLightOutput *)",
-        "location": {
-          "column": "5",
-          "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
-        },
-        "name": "IOperationState",
-        "origin": "user_include",
-        "scope": "IOperationState"
-      },
-      {
-        "ID": "c:@S@IOperationState@F@IOS_Entry#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IOS_Entry(void)",
-        "location": {
-          "column": "20",
-          "line": "20",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
-        },
-        "name": "IOS_Entry",
-        "origin": "user_include",
-        "scope": "IOperationState"
-      },
-      {
-        "ID": "c:@S@IOperationState@F@IOS_Exit#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IOS_Exit(void)",
-        "location": {
-          "column": "20",
-          "line": "21",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
-        },
-        "name": "IOS_Exit",
-        "origin": "user_include",
-        "scope": "IOperationState"
-      },
-      {
-        "ID": "c:@S@IOperationState@F@IOS_Execution#C#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IOS_Execution(char)",
-        "location": {
-          "column": "20",
-          "line": "22",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
-        },
-        "name": "IOS_Execution",
-        "origin": "user_include",
-        "scope": "IOperationState"
-      },
-      {
-        "ID": "c:@S@IOperationState@FI@pFollowingState",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pFollowingState",
-        "location": {
-          "column": "24",
-          "line": "23",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
-        },
-        "name": "pFollowingState",
-        "origin": "user_include",
-        "scope": "IOperationState"
-      },
-      {
-        "ID": "c:@S@IOperationState@FI@pOutputOperationState",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pOutputOperationState",
-        "location": {
-          "column": "28",
-          "line": "24",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
-        },
-        "name": "pOutputOperationState",
-        "origin": "user_include",
-        "scope": "IOperationState"
-      }
-    ],
-    "name": "IOperationState",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:TrafficLightController.h@83@macro@_TRAFFICLIGHTCONTROLLER_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_TRAFFICLIGHTCONTROLLER_H_",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-    },
-    "name": "_TRAFFICLIGHTCONTROLLER_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@TrafficLightController",
-    "What": "Class",
-    "defdec": "Def",
-    "display": "TrafficLightController",
-    "location": {
-      "column": "7",
-      "line": "19",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@TrafficLightController@F@TrafficLightController#*$@S@ITrafficLightOutput#",
-        "What": "CXXConstructor",
-        "defdec": "Dec",
-        "display": "void TrafficLightController(ITrafficLightOutput *)",
-        "location": {
-          "column": "3",
-          "line": "22",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-        },
-        "name": "TrafficLightController",
-        "origin": "user_include",
-        "scope": "TrafficLightController"
-      },
-      {
-        "ID": "c:@S@TrafficLightController@F@TrafficLightController#*$@S@ITrafficLightOutput#",
-        "What": "CXXConstructor",
-        "defdec": "Dec",
-        "display": "void TrafficLightController(ITrafficLightOutput *)",
-        "location": {
-          "column": "3",
-          "line": "22",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-        },
-        "name": "TrafficLightController",
-        "origin": "user_include",
-        "scope": "TrafficLightController"
-      },
-      {
-        "ID": "c:@S@TrafficLightController@F@Controller#C#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "bool Controller(char)",
-        "location": {
-          "column": "8",
-          "line": "23",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-        },
-        "name": "Controller",
-        "origin": "user_include",
-        "scope": "TrafficLightController"
-      },
-      {
-        "ID": "c:@S@TrafficLightController@F@Controller#C#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "bool Controller(char)",
-        "location": {
-          "column": "8",
-          "line": "23",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-        },
-        "name": "Controller",
-        "origin": "user_include",
-        "scope": "TrafficLightController"
-      },
-      {
-        "ID": "c:@S@TrafficLightController@FI@pOutputTrafficLightController",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pOutputTrafficLightController",
-        "location": {
-          "column": "25",
-          "line": "26",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-        },
-        "name": "pOutputTrafficLightController",
-        "origin": "user_include",
-        "scope": "TrafficLightController"
-      },
-      {
-        "ID": "c:@S@TrafficLightController@FI@Operation",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Operation",
-        "location": {
-          "column": "19",
-          "line": "27",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-        },
-        "name": "Operation",
-        "origin": "user_include",
-        "scope": "TrafficLightController"
-      },
-      {
-        "ID": "c:@S@TrafficLightController@FI@Flashing",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Flashing",
-        "location": {
-          "column": "22",
-          "line": "28",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-        },
-        "name": "Flashing",
-        "origin": "user_include",
-        "scope": "TrafficLightController"
-      },
-      {
-        "ID": "c:@S@TrafficLightController@FI@pCurrentState",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pCurrentState",
-        "location": {
-          "column": "21",
-          "line": "29",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
-        },
-        "name": "pCurrentState",
-        "origin": "user_include",
-        "scope": "TrafficLightController"
-      }
-    ],
-    "name": "TrafficLightController",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@main#",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int main(void)",
-    "location": {
-      "column": "5",
-      "line": "12",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
-    },
-    "name": "main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.cpp@611@F@main#@Input",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "Input",
-    "location": {
-      "column": "8",
-      "line": "20",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
-    },
-    "name": "Input",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.cpp@816@F@main#@pTrafficLightInput",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pTrafficLightInput",
-    "location": {
-      "column": "25",
-      "line": "26",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
-    },
-    "name": "pTrafficLightInput",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.cpp@885@F@main#@pTrafficLightOutput",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pTrafficLightOutput",
-    "location": {
-      "column": "26",
-      "line": "27",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
-    },
-    "name": "pTrafficLightOutput",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:main.cpp@969@F@main#@TrafficLightController",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "TrafficLightController",
-    "location": {
-      "column": "26",
-      "line": "30",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
-    },
-    "name": "TrafficLightController",
-    "origin": "project_file",
     "scope": null
   },
   {
@@ -73512,358 +73284,286 @@
     "scope": null
   },
   {
-    "ID": "c:@S@OS_InOperation@F@OS_InOperation#*$@S@ITrafficLightOutput#",
+    "ID": "c:ITrafficLightState.h@75@macro@_ITRAFFICLIGHTSTATE_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_ITRAFFICLIGHTSTATE_H_",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
+    },
+    "name": "_ITRAFFICLIGHTSTATE_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@ITrafficLightState",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "ITrafficLightState",
+    "location": {
+      "column": "7",
+      "line": "16",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@ITrafficLightState@F@ITrafficLightState#*$@S@ITrafficLightOutput#",
+        "What": "CXXConstructor",
+        "defdec": "Def",
+        "display": "void ITrafficLightState(ITrafficLightOutput *)",
+        "location": {
+          "column": "3",
+          "line": "19",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
+        },
+        "name": "ITrafficLightState",
+        "origin": "user_include",
+        "scope": "ITrafficLightState"
+      },
+      {
+        "ID": "c:@S@ITrafficLightState@F@ITLS_Entry#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void ITLS_Entry(void)",
+        "location": {
+          "column": "16",
+          "line": "21",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
+        },
+        "name": "ITLS_Entry",
+        "origin": "user_include",
+        "scope": "ITrafficLightState"
+      },
+      {
+        "ID": "c:@S@ITrafficLightState@F@ITLS_Exit#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void ITLS_Exit(void)",
+        "location": {
+          "column": "16",
+          "line": "22",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
+        },
+        "name": "ITLS_Exit",
+        "origin": "user_include",
+        "scope": "ITrafficLightState"
+      },
+      {
+        "ID": "c:@S@ITrafficLightState@F@ITLS_Execution#C#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void ITLS_Execution(char)",
+        "location": {
+          "column": "16",
+          "line": "23",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
+        },
+        "name": "ITLS_Execution",
+        "origin": "user_include",
+        "scope": "ITrafficLightState"
+      },
+      {
+        "ID": "c:@S@ITrafficLightState@FI@pFollowingState",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pFollowingState",
+        "location": {
+          "column": "23",
+          "line": "25",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
+        },
+        "name": "pFollowingState",
+        "origin": "user_include",
+        "scope": "ITrafficLightState"
+      },
+      {
+        "ID": "c:@S@ITrafficLightState@FI@pOutputState",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pOutputState",
+        "location": {
+          "column": "24",
+          "line": "26",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
+        },
+        "name": "pOutputState",
+        "origin": "user_include",
+        "scope": "ITrafficLightState"
+      }
+    ],
+    "name": "ITrafficLightState",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@224@macro@_HARDWAREPRESENT_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_HARDWAREPRESENT_",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
+    },
+    "name": "_HARDWAREPRESENT_",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@main#",
     "What": "Function",
     "defdec": "Def",
-    "display": "void OS_InOperation(ITrafficLightOutput *)",
+    "display": "int main(void)",
     "location": {
-      "column": "17",
-      "line": "5",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_InOperation.cpp"
-    },
-    "name": "OS_InOperation",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@OS_InOperation@F@IOS_Entry#",
-    "What": "CXXMethod",
-    "defdec": "Def",
-    "display": "void IOS_Entry(void)",
-    "location": {
-      "column": "22",
-      "line": "14",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_InOperation.cpp"
-    },
-    "name": "IOS_Entry",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@OS_InOperation@F@IOS_Execution#C#",
-    "What": "CXXMethod",
-    "defdec": "Def",
-    "display": "void IOS_Execution(char)",
-    "location": {
-      "column": "22",
-      "line": "21",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_InOperation.cpp"
-    },
-    "name": "IOS_Execution",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@OS_InOperation@F@IOS_Exit#",
-    "What": "CXXMethod",
-    "defdec": "Def",
-    "display": "void IOS_Exit(void)",
-    "location": {
-      "column": "22",
-      "line": "35",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_InOperation.cpp"
-    },
-    "name": "IOS_Exit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@TLO_SoftwareOutput",
-    "What": "Class",
-    "defdec": "Def",
-    "display": "TLO_SoftwareOutput",
-    "location": {
-      "column": "7",
-      "line": "12",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@TLO_SoftwareOutput@F@TLO_SoftwareOutput#",
-        "What": "CXXConstructor",
-        "defdec": "Def",
-        "display": "void TLO_SoftwareOutput(void)",
-        "location": {
-          "column": "5",
-          "line": "15",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-        },
-        "name": "TLO_SoftwareOutput",
-        "origin": "user_include",
-        "scope": "TLO_SoftwareOutput"
-      },
-      {
-        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputRed#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IOutputRed(void)",
-        "location": {
-          "column": "10",
-          "line": "17",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-        },
-        "name": "IOutputRed",
-        "origin": "user_include",
-        "scope": "TLO_SoftwareOutput"
-      },
-      {
-        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputRedAmber#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IOutputRedAmber(void)",
-        "location": {
-          "column": "10",
-          "line": "18",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-        },
-        "name": "IOutputRedAmber",
-        "origin": "user_include",
-        "scope": "TLO_SoftwareOutput"
-      },
-      {
-        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputAmber#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IOutputAmber(void)",
-        "location": {
-          "column": "10",
-          "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-        },
-        "name": "IOutputAmber",
-        "origin": "user_include",
-        "scope": "TLO_SoftwareOutput"
-      },
-      {
-        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputGreen#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IOutputGreen(void)",
-        "location": {
-          "column": "10",
-          "line": "20",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-        },
-        "name": "IOutputGreen",
-        "origin": "user_include",
-        "scope": "TLO_SoftwareOutput"
-      },
-      {
-        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputFlashing#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IOutputFlashing(void)",
-        "location": {
-          "column": "10",
-          "line": "21",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-        },
-        "name": "IOutputFlashing",
-        "origin": "user_include",
-        "scope": "TLO_SoftwareOutput"
-      },
-      {
-        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputFlashing#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IOutputFlashing(void)",
-        "location": {
-          "column": "10",
-          "line": "21",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-        },
-        "name": "IOutputFlashing",
-        "origin": "user_include",
-        "scope": "TLO_SoftwareOutput"
-      },
-      {
-        "ID": "c:@S@TLO_SoftwareOutput@F@IOff#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IOff(void)",
-        "location": {
-          "column": "10",
-          "line": "22",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
-        },
-        "name": "IOff",
-        "origin": "user_include",
-        "scope": "TLO_SoftwareOutput"
-      }
-    ],
-    "name": "TLO_SoftwareOutput",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:TLS_Amber.h@53@macro@_AMBER_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_AMBER_H_",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
-    },
-    "name": "_AMBER_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@TLS_Amber",
-    "What": "Class",
-    "defdec": "Def",
-    "display": "TLS_Amber",
-    "location": {
-      "column": "7",
-      "line": "12",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@TLS_Amber@F@TLS_Amber#*$@S@ITrafficLightOutput#",
-        "What": "CXXConstructor",
-        "defdec": "Def",
-        "display": "void TLS_Amber(ITrafficLightOutput *)",
-        "location": {
-          "column": "3",
-          "line": "15",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
-        },
-        "name": "TLS_Amber",
-        "origin": "user_include",
-        "scope": "TLS_Amber"
-      },
-      {
-        "ID": "c:@S@TLS_Amber@F@IS_Entry#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IS_Entry(void)",
-        "location": {
-          "column": "10",
-          "line": "17",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
-        },
-        "name": "IS_Entry",
-        "origin": "user_include",
-        "scope": "TLS_Amber"
-      },
-      {
-        "ID": "c:@S@TLS_Amber@F@IS_Exit#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IS_Exit(void)",
-        "location": {
-          "column": "10",
-          "line": "18",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
-        },
-        "name": "IS_Exit",
-        "origin": "user_include",
-        "scope": "TLS_Amber"
-      },
-      {
-        "ID": "c:@S@TLS_Amber@F@IS_Execution#C#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IS_Execution(char)",
-        "location": {
-          "column": "10",
-          "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Amber.h"
-        },
-        "name": "IS_Execution",
-        "origin": "user_include",
-        "scope": "TLS_Amber"
-      }
-    ],
-    "name": "TLS_Amber",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:OS_OutOfOperation.h@70@macro@_OUTOFOPERATION_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_OUTOFOPERATION_H_",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
-    },
-    "name": "_OUTOFOPERATION_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@OS_OutOfOperation",
-    "What": "Class",
-    "defdec": "Def",
-    "display": "OS_OutOfOperation",
-    "location": {
-      "column": "7",
+      "column": "5",
       "line": "13",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
+    },
+    "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@638@F@main#@Input",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "Input",
+    "location": {
+      "column": "8",
+      "line": "21",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
+    },
+    "name": "Input",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@694@F@main#@pTrafficLightInput",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "pTrafficLightInput",
+    "location": {
+      "column": "25",
+      "line": "24",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
+    },
+    "name": "pTrafficLightInput",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@763@F@main#@pTrafficLightOutput",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "pTrafficLightOutput",
+    "location": {
+      "column": "26",
+      "line": "25",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
+    },
+    "name": "pTrafficLightOutput",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.cpp@997@F@main#@TrafficLightController",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "TrafficLightController",
+    "location": {
+      "column": "26",
+      "line": "31",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\main.cpp"
+    },
+    "name": "TrafficLightController",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:TLS_Green.h@53@macro@_GREEN_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_GREEN_H_",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+    },
+    "name": "_GREEN_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@TLS_Green",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "TLS_Green",
+    "location": {
+      "column": "7",
+      "line": "12",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
     },
     "members": [
       {
-        "ID": "c:@S@OS_OutOfOperation@F@OS_OutOfOperation#*$@S@ITrafficLightOutput#",
+        "ID": "c:@S@TLS_Green@F@TLS_Green#*$@S@ITrafficLightOutput#",
         "What": "CXXConstructor",
         "defdec": "Def",
-        "display": "void OS_OutOfOperation(ITrafficLightOutput *)",
+        "display": "void TLS_Green(ITrafficLightOutput *)",
         "location": {
-          "column": "3",
-          "line": "17",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+          "column": "1",
+          "line": "15",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
         },
-        "name": "OS_OutOfOperation",
+        "name": "TLS_Green",
         "origin": "user_include",
-        "scope": "OS_OutOfOperation"
+        "scope": "TLS_Green"
       },
       {
-        "ID": "c:@S@OS_OutOfOperation@F@IOS_Entry#",
+        "ID": "c:@S@TLS_Green@F@ITLS_Entry#",
         "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IOS_Entry(void)",
+        "defdec": "Def",
+        "display": "void ITLS_Entry(void)",
+        "location": {
+          "column": "10",
+          "line": "17",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+        },
+        "name": "ITLS_Entry",
+        "origin": "user_include",
+        "scope": "TLS_Green"
+      },
+      {
+        "ID": "c:@S@TLS_Green@F@ITLS_Exit#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "void ITLS_Exit(void)",
+        "location": {
+          "column": "10",
+          "line": "18",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
+        },
+        "name": "ITLS_Exit",
+        "origin": "user_include",
+        "scope": "TLS_Green"
+      },
+      {
+        "ID": "c:@S@TLS_Green@F@ITLS_Execution#C#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "void ITLS_Execution(char)",
         "location": {
           "column": "10",
           "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Green.h"
         },
-        "name": "IOS_Entry",
+        "name": "ITLS_Execution",
         "origin": "user_include",
-        "scope": "OS_OutOfOperation"
-      },
-      {
-        "ID": "c:@S@OS_OutOfOperation@F@IOS_Exit#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IOS_Exit(void)",
-        "location": {
-          "column": "10",
-          "line": "20",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
-        },
-        "name": "IOS_Exit",
-        "origin": "user_include",
-        "scope": "OS_OutOfOperation"
-      },
-      {
-        "ID": "c:@S@OS_OutOfOperation@F@IOS_Execution#C#",
-        "What": "CXXMethod",
-        "defdec": "Def",
-        "display": "void IOS_Execution(char)",
-        "location": {
-          "column": "10",
-          "line": "21",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
-        },
-        "name": "IOS_Execution",
-        "origin": "user_include",
-        "scope": "OS_OutOfOperation"
+        "scope": "TLS_Green"
       }
     ],
-    "name": "OS_OutOfOperation",
+    "name": "TLS_Green",
     "origin": "user_include",
     "scope": null
   },
@@ -73996,6 +73696,622 @@
     "scope": null
   },
   {
+    "ID": "c:IOperationState.h@69@macro@_IOPERATIONSTATE_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_IOPERATIONSTATE_H_",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
+    },
+    "name": "_IOPERATIONSTATE_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@IOperationState",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "IOperationState",
+    "location": {
+      "column": "7",
+      "line": "16",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@IOperationState@F@IOperationState#*$@S@ITrafficLightOutput#",
+        "What": "CXXConstructor",
+        "defdec": "Def",
+        "display": "void IOperationState(ITrafficLightOutput *)",
+        "location": {
+          "column": "5",
+          "line": "19",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
+        },
+        "name": "IOperationState",
+        "origin": "user_include",
+        "scope": "IOperationState"
+      },
+      {
+        "ID": "c:@S@IOperationState@F@IOS_Entry#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void IOS_Entry(void)",
+        "location": {
+          "column": "20",
+          "line": "20",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
+        },
+        "name": "IOS_Entry",
+        "origin": "user_include",
+        "scope": "IOperationState"
+      },
+      {
+        "ID": "c:@S@IOperationState@F@IOS_Exit#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void IOS_Exit(void)",
+        "location": {
+          "column": "20",
+          "line": "21",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
+        },
+        "name": "IOS_Exit",
+        "origin": "user_include",
+        "scope": "IOperationState"
+      },
+      {
+        "ID": "c:@S@IOperationState@F@IOS_Execution#C#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void IOS_Execution(char)",
+        "location": {
+          "column": "20",
+          "line": "22",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
+        },
+        "name": "IOS_Execution",
+        "origin": "user_include",
+        "scope": "IOperationState"
+      },
+      {
+        "ID": "c:@S@IOperationState@FI@pFollowingState",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pFollowingState",
+        "location": {
+          "column": "24",
+          "line": "23",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
+        },
+        "name": "pFollowingState",
+        "origin": "user_include",
+        "scope": "IOperationState"
+      },
+      {
+        "ID": "c:@S@IOperationState@FI@pOutputOperationState",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pOutputOperationState",
+        "location": {
+          "column": "28",
+          "line": "24",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\IOperationState.h"
+        },
+        "name": "pOutputOperationState",
+        "origin": "user_include",
+        "scope": "IOperationState"
+      }
+    ],
+    "name": "IOperationState",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@TLI_SoftwareInput",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "TLI_SoftwareInput",
+    "location": {
+      "column": "7",
+      "line": "13",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@TLI_SoftwareInput@FI@CharacterInput",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "CharacterInput",
+        "location": {
+          "column": "7",
+          "line": "16",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
+        },
+        "name": "CharacterInput",
+        "origin": "user_include",
+        "scope": "TLI_SoftwareInput"
+      },
+      {
+        "ID": "c:@S@TLI_SoftwareInput@F@TLI_SoftwareInput#",
+        "What": "CXXConstructor",
+        "defdec": "Def",
+        "display": "void TLI_SoftwareInput(void)",
+        "location": {
+          "column": "2",
+          "line": "19",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
+        },
+        "name": "TLI_SoftwareInput",
+        "origin": "user_include",
+        "scope": "TLI_SoftwareInput"
+      },
+      {
+        "ID": "c:@S@TLI_SoftwareInput@F@IInput#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "char IInput(void)",
+        "location": {
+          "column": "7",
+          "line": "21",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
+        },
+        "name": "IInput",
+        "origin": "user_include",
+        "scope": "TLI_SoftwareInput"
+      },
+      {
+        "ID": "c:@S@TLI_SoftwareInput@F@IInput#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "char IInput(void)",
+        "location": {
+          "column": "7",
+          "line": "21",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
+        },
+        "name": "IInput",
+        "origin": "user_include",
+        "scope": "TLI_SoftwareInput"
+      }
+    ],
+    "name": "TLI_SoftwareInput",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ITrafficLightInput.h@75@macro@_ITRAFFICLIGHTINPUT_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_ITRAFFICLIGHTINPUT_H_",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightInput.h"
+    },
+    "name": "_ITRAFFICLIGHTINPUT_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@ITrafficLightInput",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "ITrafficLightInput",
+    "location": {
+      "column": "7",
+      "line": "14",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightInput.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@ITrafficLightInput@F@ITrafficLightInput#",
+        "What": "CXXConstructor",
+        "defdec": "Dec",
+        "display": "void ITrafficLightInput(void)",
+        "location": {
+          "column": "3",
+          "line": "17",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightInput.h"
+        },
+        "name": "ITrafficLightInput",
+        "origin": "user_include",
+        "scope": "ITrafficLightInput"
+      },
+      {
+        "ID": "c:@S@ITrafficLightInput@F@IInput#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "char IInput(void)",
+        "location": {
+          "column": "16",
+          "line": "18",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightInput.h"
+        },
+        "name": "IInput",
+        "origin": "user_include",
+        "scope": "ITrafficLightInput"
+      }
+    ],
+    "name": "ITrafficLightInput",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:OS_OutOfOperation.h@70@macro@_OUTOFOPERATION_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_OUTOFOPERATION_H_",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+    },
+    "name": "_OUTOFOPERATION_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@OS_OutOfOperation",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "OS_OutOfOperation",
+    "location": {
+      "column": "7",
+      "line": "13",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@OS_OutOfOperation@F@OS_OutOfOperation#*$@S@ITrafficLightOutput#",
+        "What": "CXXConstructor",
+        "defdec": "Def",
+        "display": "void OS_OutOfOperation(ITrafficLightOutput *)",
+        "location": {
+          "column": "3",
+          "line": "17",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+        },
+        "name": "OS_OutOfOperation",
+        "origin": "user_include",
+        "scope": "OS_OutOfOperation"
+      },
+      {
+        "ID": "c:@S@OS_OutOfOperation@F@IOS_Entry#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void IOS_Entry(void)",
+        "location": {
+          "column": "10",
+          "line": "19",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+        },
+        "name": "IOS_Entry",
+        "origin": "user_include",
+        "scope": "OS_OutOfOperation"
+      },
+      {
+        "ID": "c:@S@OS_OutOfOperation@F@IOS_Exit#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void IOS_Exit(void)",
+        "location": {
+          "column": "10",
+          "line": "20",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+        },
+        "name": "IOS_Exit",
+        "origin": "user_include",
+        "scope": "OS_OutOfOperation"
+      },
+      {
+        "ID": "c:@S@OS_OutOfOperation@F@IOS_Execution#C#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "void IOS_Execution(char)",
+        "location": {
+          "column": "10",
+          "line": "21",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_OutOfOperation.h"
+        },
+        "name": "IOS_Execution",
+        "origin": "user_include",
+        "scope": "OS_OutOfOperation"
+      }
+    ],
+    "name": "OS_OutOfOperation",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@TLI_HardwareInput",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "TLI_HardwareInput",
+    "location": {
+      "column": "7",
+      "line": "13",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_HardwareInput.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@TLI_HardwareInput@FI@button",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "button",
+        "location": {
+          "column": "9",
+          "line": "16",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_HardwareInput.h"
+        },
+        "name": "button",
+        "origin": "user_include",
+        "scope": "TLI_HardwareInput"
+      },
+      {
+        "ID": "c:@S@TLI_HardwareInput@F@TLI_HardwareInput#",
+        "What": "CXXConstructor",
+        "defdec": "Def",
+        "display": "void TLI_HardwareInput(void)",
+        "location": {
+          "column": "7",
+          "line": "19",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_HardwareInput.h"
+        },
+        "name": "TLI_HardwareInput",
+        "origin": "user_include",
+        "scope": "TLI_HardwareInput"
+      },
+      {
+        "ID": "c:@S@TLI_HardwareInput@F@IInput#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "char IInput(void)",
+        "location": {
+          "column": "12",
+          "line": "21",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_HardwareInput.h"
+        },
+        "name": "IInput",
+        "origin": "user_include",
+        "scope": "TLI_HardwareInput"
+      }
+    ],
+    "name": "TLI_HardwareInput",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:TrafficLightController.h@83@macro@_TRAFFICLIGHTCONTROLLER_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_TRAFFICLIGHTCONTROLLER_H_",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+    },
+    "name": "_TRAFFICLIGHTCONTROLLER_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@TrafficLightController",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "TrafficLightController",
+    "location": {
+      "column": "7",
+      "line": "19",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@TrafficLightController@F@TrafficLightController#*$@S@ITrafficLightOutput#",
+        "What": "CXXConstructor",
+        "defdec": "Dec",
+        "display": "void TrafficLightController(ITrafficLightOutput *)",
+        "location": {
+          "column": "3",
+          "line": "22",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+        },
+        "name": "TrafficLightController",
+        "origin": "user_include",
+        "scope": "TrafficLightController"
+      },
+      {
+        "ID": "c:@S@TrafficLightController@F@TrafficLightController#*$@S@ITrafficLightOutput#",
+        "What": "CXXConstructor",
+        "defdec": "Dec",
+        "display": "void TrafficLightController(ITrafficLightOutput *)",
+        "location": {
+          "column": "3",
+          "line": "22",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+        },
+        "name": "TrafficLightController",
+        "origin": "user_include",
+        "scope": "TrafficLightController"
+      },
+      {
+        "ID": "c:@S@TrafficLightController@F@Controller#C#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "bool Controller(char)",
+        "location": {
+          "column": "8",
+          "line": "23",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+        },
+        "name": "Controller",
+        "origin": "user_include",
+        "scope": "TrafficLightController"
+      },
+      {
+        "ID": "c:@S@TrafficLightController@F@Controller#C#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "bool Controller(char)",
+        "location": {
+          "column": "8",
+          "line": "23",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+        },
+        "name": "Controller",
+        "origin": "user_include",
+        "scope": "TrafficLightController"
+      },
+      {
+        "ID": "c:@S@TrafficLightController@FI@pOutputTrafficLightController",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pOutputTrafficLightController",
+        "location": {
+          "column": "25",
+          "line": "26",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+        },
+        "name": "pOutputTrafficLightController",
+        "origin": "user_include",
+        "scope": "TrafficLightController"
+      },
+      {
+        "ID": "c:@S@TrafficLightController@FI@Operation",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Operation",
+        "location": {
+          "column": "19",
+          "line": "27",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+        },
+        "name": "Operation",
+        "origin": "user_include",
+        "scope": "TrafficLightController"
+      },
+      {
+        "ID": "c:@S@TrafficLightController@FI@Flashing",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Flashing",
+        "location": {
+          "column": "22",
+          "line": "28",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+        },
+        "name": "Flashing",
+        "origin": "user_include",
+        "scope": "TrafficLightController"
+      },
+      {
+        "ID": "c:@S@TrafficLightController@FI@pCurrentState",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pCurrentState",
+        "location": {
+          "column": "21",
+          "line": "29",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.h"
+        },
+        "name": "pCurrentState",
+        "origin": "user_include",
+        "scope": "TrafficLightController"
+      }
+    ],
+    "name": "TrafficLightController",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:TLS_Red.h@49@macro@_RED_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_RED_H_",
+    "location": {
+      "column": "9",
+      "line": "3",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+    },
+    "name": "_RED_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@TLS_Red",
+    "What": "Class",
+    "defdec": "Def",
+    "display": "TLS_Red",
+    "location": {
+      "column": "7",
+      "line": "12",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@TLS_Red@F@TLS_Red#*$@S@ITrafficLightOutput#",
+        "What": "CXXConstructor",
+        "defdec": "Def",
+        "display": "void TLS_Red(ITrafficLightOutput *)",
+        "location": {
+          "column": "3",
+          "line": "15",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+        },
+        "name": "TLS_Red",
+        "origin": "user_include",
+        "scope": "TLS_Red"
+      },
+      {
+        "ID": "c:@S@TLS_Red@F@ITLS_Entry#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "void ITLS_Entry(void)",
+        "location": {
+          "column": "10",
+          "line": "17",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+        },
+        "name": "ITLS_Entry",
+        "origin": "user_include",
+        "scope": "TLS_Red"
+      },
+      {
+        "ID": "c:@S@TLS_Red@F@ITLS_Exit#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "void ITLS_Exit(void)",
+        "location": {
+          "column": "10",
+          "line": "18",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+        },
+        "name": "ITLS_Exit",
+        "origin": "user_include",
+        "scope": "TLS_Red"
+      },
+      {
+        "ID": "c:@S@TLS_Red@F@ITLS_Execution#C#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "void ITLS_Execution(char)",
+        "location": {
+          "column": "10",
+          "line": "19",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+        },
+        "name": "ITLS_Execution",
+        "origin": "user_include",
+        "scope": "TLS_Red"
+      }
+    ],
+    "name": "TLS_Red",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:TLS_RedAmber.h@59@macro@_REDAMBER_H_",
     "What": "MacroDef",
     "defdec": "Def",
@@ -74035,44 +74351,44 @@
         "scope": "TLS_RedAmber"
       },
       {
-        "ID": "c:@S@TLS_RedAmber@F@IS_Entry#",
+        "ID": "c:@S@TLS_RedAmber@F@ITLS_Entry#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Entry(void)",
+        "display": "void ITLS_Entry(void)",
         "location": {
           "column": "10",
           "line": "17",
           "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_RedAmber.h"
         },
-        "name": "IS_Entry",
+        "name": "ITLS_Entry",
         "origin": "user_include",
         "scope": "TLS_RedAmber"
       },
       {
-        "ID": "c:@S@TLS_RedAmber@F@IS_Exit#",
+        "ID": "c:@S@TLS_RedAmber@F@ITLS_Exit#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Exit(void)",
+        "display": "void ITLS_Exit(void)",
         "location": {
           "column": "10",
           "line": "18",
           "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_RedAmber.h"
         },
-        "name": "IS_Exit",
+        "name": "ITLS_Exit",
         "origin": "user_include",
         "scope": "TLS_RedAmber"
       },
       {
-        "ID": "c:@S@TLS_RedAmber@F@IS_Execution#C#",
+        "ID": "c:@S@TLS_RedAmber@F@ITLS_Execution#C#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Execution(char)",
+        "display": "void ITLS_Execution(char)",
         "location": {
           "column": "10",
           "line": "19",
           "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_RedAmber.h"
         },
-        "name": "IS_Execution",
+        "name": "ITLS_Execution",
         "origin": "user_include",
         "scope": "TLS_RedAmber"
       }
@@ -74224,391 +74540,229 @@
     "scope": null
   },
   {
-    "ID": "c:ITrafficLightState.h@75@macro@_ITRAFFICLIGHTSTATE_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_ITRAFFICLIGHTSTATE_H_",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
-    },
-    "name": "_ITRAFFICLIGHTSTATE_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@ITrafficLightState",
+    "ID": "c:@S@TLO_SoftwareOutput",
     "What": "Class",
     "defdec": "Def",
-    "display": "ITrafficLightState",
-    "location": {
-      "column": "7",
-      "line": "16",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@ITrafficLightState@F@ITrafficLightState#*$@S@ITrafficLightOutput#",
-        "What": "CXXConstructor",
-        "defdec": "Def",
-        "display": "void ITrafficLightState(ITrafficLightOutput *)",
-        "location": {
-          "column": "3",
-          "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
-        },
-        "name": "ITrafficLightState",
-        "origin": "user_include",
-        "scope": "ITrafficLightState"
-      },
-      {
-        "ID": "c:@S@ITrafficLightState@F@IS_Entry#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IS_Entry(void)",
-        "location": {
-          "column": "16",
-          "line": "21",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
-        },
-        "name": "IS_Entry",
-        "origin": "user_include",
-        "scope": "ITrafficLightState"
-      },
-      {
-        "ID": "c:@S@ITrafficLightState@F@IS_Exit#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IS_Exit(void)",
-        "location": {
-          "column": "16",
-          "line": "22",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
-        },
-        "name": "IS_Exit",
-        "origin": "user_include",
-        "scope": "ITrafficLightState"
-      },
-      {
-        "ID": "c:@S@ITrafficLightState@F@IS_Execution#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "void IS_Execution(void)",
-        "location": {
-          "column": "16",
-          "line": "23",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
-        },
-        "name": "IS_Execution",
-        "origin": "user_include",
-        "scope": "ITrafficLightState"
-      },
-      {
-        "ID": "c:@S@ITrafficLightState@FI@pFollowingState",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pFollowingState",
-        "location": {
-          "column": "23",
-          "line": "25",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
-        },
-        "name": "pFollowingState",
-        "origin": "user_include",
-        "scope": "ITrafficLightState"
-      },
-      {
-        "ID": "c:@S@ITrafficLightState@FI@pOutputState",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pOutputState",
-        "location": {
-          "column": "24",
-          "line": "26",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightState.h"
-        },
-        "name": "pOutputState",
-        "origin": "user_include",
-        "scope": "ITrafficLightState"
-      }
-    ],
-    "name": "ITrafficLightState",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:TLS_Red.h@49@macro@_RED_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_RED_H_",
-    "location": {
-      "column": "9",
-      "line": "3",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
-    },
-    "name": "_RED_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@TLS_Red",
-    "What": "Class",
-    "defdec": "Def",
-    "display": "TLS_Red",
+    "display": "TLO_SoftwareOutput",
     "location": {
       "column": "7",
       "line": "12",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
     },
     "members": [
       {
-        "ID": "c:@S@TLS_Red@F@TLS_Red#*$@S@ITrafficLightOutput#",
+        "ID": "c:@S@TLO_SoftwareOutput@F@TLO_SoftwareOutput#",
         "What": "CXXConstructor",
         "defdec": "Def",
-        "display": "void TLS_Red(ITrafficLightOutput *)",
+        "display": "void TLO_SoftwareOutput(void)",
         "location": {
-          "column": "3",
+          "column": "5",
           "line": "15",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
         },
-        "name": "TLS_Red",
+        "name": "TLO_SoftwareOutput",
         "origin": "user_include",
-        "scope": "TLS_Red"
+        "scope": "TLO_SoftwareOutput"
       },
       {
-        "ID": "c:@S@TLS_Red@F@IS_Entry#",
+        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputRed#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Entry(void)",
+        "display": "void IOutputRed(void)",
         "location": {
           "column": "10",
           "line": "17",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
         },
-        "name": "IS_Entry",
+        "name": "IOutputRed",
         "origin": "user_include",
-        "scope": "TLS_Red"
+        "scope": "TLO_SoftwareOutput"
       },
       {
-        "ID": "c:@S@TLS_Red@F@IS_Exit#",
+        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputRedAmber#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Exit(void)",
+        "display": "void IOutputRedAmber(void)",
         "location": {
           "column": "10",
           "line": "18",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
         },
-        "name": "IS_Exit",
+        "name": "IOutputRedAmber",
         "origin": "user_include",
-        "scope": "TLS_Red"
+        "scope": "TLO_SoftwareOutput"
       },
       {
-        "ID": "c:@S@TLS_Red@F@IS_Execution#C#",
+        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputAmber#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "void IS_Execution(char)",
+        "display": "void IOutputAmber(void)",
         "location": {
           "column": "10",
           "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLS_Red.h"
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
         },
-        "name": "IS_Execution",
+        "name": "IOutputAmber",
         "origin": "user_include",
-        "scope": "TLS_Red"
-      }
-    ],
-    "name": "TLS_Red",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@TLI_HardwareInput",
-    "What": "Class",
-    "defdec": "Def",
-    "display": "TLI_HardwareInput",
-    "location": {
-      "column": "7",
-      "line": "13",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_HardwareInput.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@TLI_HardwareInput@FI@button",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "button",
-        "location": {
-          "column": "9",
-          "line": "16",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_HardwareInput.h"
-        },
-        "name": "button",
-        "origin": "user_include",
-        "scope": "TLI_HardwareInput"
+        "scope": "TLO_SoftwareOutput"
       },
       {
-        "ID": "c:@S@TLI_HardwareInput@F@TLI_HardwareInput#",
-        "What": "CXXConstructor",
-        "defdec": "Def",
-        "display": "void TLI_HardwareInput(void)",
-        "location": {
-          "column": "7",
-          "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_HardwareInput.h"
-        },
-        "name": "TLI_HardwareInput",
-        "origin": "user_include",
-        "scope": "TLI_HardwareInput"
-      },
-      {
-        "ID": "c:@S@TLI_HardwareInput@F@IInput#",
+        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputGreen#",
         "What": "CXXMethod",
         "defdec": "Def",
-        "display": "char IInput(void)",
+        "display": "void IOutputGreen(void)",
         "location": {
-          "column": "12",
-          "line": "21",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_HardwareInput.h"
+          "column": "10",
+          "line": "20",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
         },
-        "name": "IInput",
+        "name": "IOutputGreen",
         "origin": "user_include",
-        "scope": "TLI_HardwareInput"
+        "scope": "TLO_SoftwareOutput"
+      },
+      {
+        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputFlashing#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void IOutputFlashing(void)",
+        "location": {
+          "column": "10",
+          "line": "21",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
+        },
+        "name": "IOutputFlashing",
+        "origin": "user_include",
+        "scope": "TLO_SoftwareOutput"
+      },
+      {
+        "ID": "c:@S@TLO_SoftwareOutput@F@IOutputFlashing#",
+        "What": "CXXMethod",
+        "defdec": "Dec",
+        "display": "void IOutputFlashing(void)",
+        "location": {
+          "column": "10",
+          "line": "21",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
+        },
+        "name": "IOutputFlashing",
+        "origin": "user_include",
+        "scope": "TLO_SoftwareOutput"
+      },
+      {
+        "ID": "c:@S@TLO_SoftwareOutput@F@IOff#",
+        "What": "CXXMethod",
+        "defdec": "Def",
+        "display": "void IOff(void)",
+        "location": {
+          "column": "10",
+          "line": "22",
+          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.h"
+        },
+        "name": "IOff",
+        "origin": "user_include",
+        "scope": "TLO_SoftwareOutput"
       }
     ],
-    "name": "TLI_HardwareInput",
+    "name": "TLO_SoftwareOutput",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:ITrafficLightInput.h@75@macro@_ITRAFFICLIGHTINPUT_H_",
-    "What": "MacroDef",
+    "ID": "c:regtypes.h@T@UINT8",
+    "What": "Typedef",
     "defdec": "Def",
-    "display": "_ITRAFFICLIGHTINPUT_H_",
+    "display": "unsigned char",
     "location": {
-      "column": "9",
+      "column": "23",
+      "line": "1",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\regtypes.h"
+    },
+    "name": "UINT8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:regtypes.h@T@UINT16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned short",
+    "location": {
+      "column": "24",
+      "line": "2",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\regtypes.h"
+    },
+    "name": "UINT16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:regtypes.h@T@UINT32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int",
+    "location": {
+      "column": "22",
       "line": "3",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightInput.h"
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\regtypes.h"
     },
-    "name": "_ITRAFFICLIGHTINPUT_H_",
+    "name": "UINT32",
     "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:@S@ITrafficLightInput",
-    "What": "Class",
+    "ID": "c:@S@OS_InOperation@F@OS_InOperation#*$@S@ITrafficLightOutput#",
+    "What": "Function",
     "defdec": "Def",
-    "display": "ITrafficLightInput",
+    "display": "void OS_InOperation(ITrafficLightOutput *)",
     "location": {
-      "column": "7",
+      "column": "17",
+      "line": "5",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_InOperation.cpp"
+    },
+    "name": "OS_InOperation",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@OS_InOperation@F@IOS_Entry#",
+    "What": "CXXMethod",
+    "defdec": "Def",
+    "display": "void IOS_Entry(void)",
+    "location": {
+      "column": "22",
       "line": "14",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightInput.h"
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_InOperation.cpp"
     },
-    "members": [
-      {
-        "ID": "c:@S@ITrafficLightInput@F@ITrafficLightInput#",
-        "What": "CXXConstructor",
-        "defdec": "Dec",
-        "display": "void ITrafficLightInput(void)",
-        "location": {
-          "column": "3",
-          "line": "17",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightInput.h"
-        },
-        "name": "ITrafficLightInput",
-        "origin": "user_include",
-        "scope": "ITrafficLightInput"
-      },
-      {
-        "ID": "c:@S@ITrafficLightInput@F@IInput#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "char IInput(void)",
-        "location": {
-          "column": "16",
-          "line": "18",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\ITrafficLightInput.h"
-        },
-        "name": "IInput",
-        "origin": "user_include",
-        "scope": "ITrafficLightInput"
-      }
-    ],
-    "name": "ITrafficLightInput",
-    "origin": "user_include",
+    "name": "IOS_Entry",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@S@TLI_SoftwareInput",
-    "What": "Class",
+    "ID": "c:@S@OS_InOperation@F@IOS_Execution#C#",
+    "What": "CXXMethod",
     "defdec": "Def",
-    "display": "TLI_SoftwareInput",
+    "display": "void IOS_Execution(char)",
     "location": {
-      "column": "7",
-      "line": "13",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
+      "column": "22",
+      "line": "21",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_InOperation.cpp"
     },
-    "members": [
-      {
-        "ID": "c:@S@TLI_SoftwareInput@FI@CharacterInput",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "CharacterInput",
-        "location": {
-          "column": "7",
-          "line": "16",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
-        },
-        "name": "CharacterInput",
-        "origin": "user_include",
-        "scope": "TLI_SoftwareInput"
-      },
-      {
-        "ID": "c:@S@TLI_SoftwareInput@F@TLI_SoftwareInput#",
-        "What": "CXXConstructor",
-        "defdec": "Def",
-        "display": "void TLI_SoftwareInput(void)",
-        "location": {
-          "column": "2",
-          "line": "19",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
-        },
-        "name": "TLI_SoftwareInput",
-        "origin": "user_include",
-        "scope": "TLI_SoftwareInput"
-      },
-      {
-        "ID": "c:@S@TLI_SoftwareInput@F@IInput#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "char IInput(void)",
-        "location": {
-          "column": "7",
-          "line": "21",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
-        },
-        "name": "IInput",
-        "origin": "user_include",
-        "scope": "TLI_SoftwareInput"
-      },
-      {
-        "ID": "c:@S@TLI_SoftwareInput@F@IInput#",
-        "What": "CXXMethod",
-        "defdec": "Dec",
-        "display": "char IInput(void)",
-        "location": {
-          "column": "7",
-          "line": "21",
-          "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.h"
-        },
-        "name": "IInput",
-        "origin": "user_include",
-        "scope": "TLI_SoftwareInput"
-      }
-    ],
-    "name": "TLI_SoftwareInput",
-    "origin": "user_include",
+    "name": "IOS_Execution",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@OS_InOperation@F@IOS_Exit#",
+    "What": "CXXMethod",
+    "defdec": "Def",
+    "display": "void IOS_Exit(void)",
+    "location": {
+      "column": "22",
+      "line": "35",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\OS_InOperation.cpp"
+    },
+    "name": "IOS_Exit",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -74622,34 +74776,6 @@
       "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLI_SoftwareInput.cpp"
     },
     "name": "IInput",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@TLO_HardwareOutput@F@TLO_HardwareOutput#",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void TLO_HardwareOutput(void)",
-    "location": {
-      "column": "21",
-      "line": "5",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_HardwareOutput.cpp"
-    },
-    "name": "TLO_HardwareOutput",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@TLO_SoftwareOutput@F@IOutputFlashing#",
-    "What": "CXXMethod",
-    "defdec": "Def",
-    "display": "void IOutputFlashing(void)",
-    "location": {
-      "column": "26",
-      "line": "5",
-      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.cpp"
-    },
-    "name": "IOutputFlashing",
     "origin": "project_file",
     "scope": null
   },
@@ -74692,6 +74818,34 @@
       "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TrafficLightController.cpp"
     },
     "name": "ReturnValue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@TLO_HardwareOutput@F@TLO_HardwareOutput#",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void TLO_HardwareOutput(void)",
+    "location": {
+      "column": "21",
+      "line": "5",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_HardwareOutput.cpp"
+    },
+    "name": "TLO_HardwareOutput",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@TLO_SoftwareOutput@F@IOutputFlashing#",
+    "What": "CXXMethod",
+    "defdec": "Def",
+    "display": "void IOutputFlashing(void)",
+    "location": {
+      "column": "26",
+      "line": "5",
+      "path": "C:\\Users\\cfranke.MANHN01\\Documents\\Semester6\\Embedded\\TrafficLightProject\\TLO_SoftwareOutput.cpp"
+    },
+    "name": "IOutputFlashing",
     "origin": "project_file",
     "scope": null
   }
