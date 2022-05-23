@@ -18,7 +18,7 @@ public:
 
   void Entry() { pOutputOperationState->OutputFlashing(); }
   void Exit() {};
-  void Execution(char) {}
+  void Execution(char) {pOutputOperationState->OutputFlashing();}
   
 };
 

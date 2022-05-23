@@ -49,7 +49,7 @@ UINT8 UserButtons::getButton()
   {
     state = getPinB3();
 
-    for(int i = 0; i<3000; i++) {}
+    for(int i = 0; i<500000; i++) {}
     
     nextstate = getPinB3();
     PB3 = nextstate;
@@ -61,7 +61,7 @@ UINT8 UserButtons::getButton()
   {
     bool state = getPinB5();
     
-    for(int i = 0; i<3000; i++) {}
+    for(int i = 0; i<500000; i++) {}
     
     bool nextstate = getPinB5();
     PB5 = nextstate;
